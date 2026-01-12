@@ -1,0 +1,79 @@
+# Compiled binaries
+mmjp_train
+mmjp_tokenize
+mmjp_export_c
+tools/mmjp_train
+tools/mmjp_tokenize
+tools/mmjp_export_c
+*.o
+*.a
+*.so
+*.dylib
+
+# Model files (except models/ directory)
+*.bin
+!models/*.bin
+
+# Large corpus files (keep wiki_small.txt for testing)
+datasets/*.txt
+!datasets/wiki_small.txt
+
+# Temporary/test files
+*.tok
+*.restored
+t.txt
+wiki.tok
+wiki.restored
+wiki_full*.tok
+wiki_full*.restored
+wiki_full*.restored2
+
+# SentencePiece models (comparison only)
+sp_wiki.model
+sp_wiki.vocab
+
+# Large archives (keep reports)
+optimise/*.zip
+optimise/**/*.zip
+
+# Source archive
+mmjp_source.zip
+
+# Internal planning docs
+PLAN.md
+
+# Python build artifacts
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+build/
+dist/
+*.egg
+.eggs/
+*.so
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Coverage and test artifacts
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Valgrind output
+massif.out.*
+callgrind.out.*
